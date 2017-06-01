@@ -1,0 +1,14 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h2>Employees</h2>
+
+<table>
+    <th:block th:each="employee : ${employees}">
+        <tr>
+            <td th:text="${employee.name}">...</td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
